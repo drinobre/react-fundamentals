@@ -5,8 +5,8 @@
   <script type="module"> 
     const rootElement = document.getElementById('root')
     const elementProps = { children:[
-      React.createElement('span', null, "Hello"),
-      React.createElement('span', null, "World"),
+      React.createElement('span', {}, "Hello"), // you can use null or empty {}
+      React.createElement('span', {children: "World"}),
     ], className:"container"}
     const ReactElement = React.createElement("div", elementProps)
     ReactDOM.createRoot(rootElement).render(ReactElement);
