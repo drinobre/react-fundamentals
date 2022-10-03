@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <script type="module">
+            let rootElement = document.createElement("div");
+            rootElement.setAttribute("id", "root");
+            document.body.append(rootElement);
+            let newDiv = document.createElement("div")
+            newDiv.textContent = "Hello World";
+            newDiv.className = "container";
+            rootElement.append(newDiv);
+        </script>
+    </body>
+</html>
